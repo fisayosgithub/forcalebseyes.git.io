@@ -1,0 +1,486 @@
+/* general css */
+
+* {
+  padding: 0;
+  margin: 0;
+  /*  */
+  box-sizing: border-box;
+}
+
+html {
+  /* adding why? */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  /* add */
+  overflow-x: hidden;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary-hero {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.heading-secondary-special {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  color: #464343;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.heading-tertiary-special {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  margin-top: 9.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.subheading {
+  /* understand why  i understand why now..its bcos span is an inline element*/
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: brown;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+/* general part ending */
+
+.header-part {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  align-items: center;
+}
+
+.clayhall-logo {
+  height: 2.2rem;
+  color: #fff;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+  list-style: none;
+  /*  */
+  /* transition: all, 0.3s; */
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  /* understand why */
+  display: inline-block;
+  text-decoration: none;
+  font-size: 500;
+  font-size: 1.8rem;
+  color: #fff;
+  /* color:#555 */
+  /* add ...i later understood why*/
+  transition: all, 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: brown;
+}
+
+.header-container {
+  /* position: relative; */
+  /* height: 100vh; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(39, 37, 37, 0.6)),
+    url(background-img-sample.jpg);
+  background-size: cover;
+
+  /* background-position: left; */
+  color: #fff;
+}
+
+.flex-item-text {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+/* .header-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.header-text-box-inner {
+  /* gap: 3.2rem; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 9.8rem 4.8rem;
+  /* padding: 4.8rem 0 9.6rem 0; */
+}
+
+.btn-learn {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  /* find out why */
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+  width: 18rem;
+}
+
+.btn-learn-more:link,
+.btn-learn-more:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn-learn-more:hover,
+.btn-learn-more:active {
+  background-color: inherit;
+  color: #fff;
+  /* you can find out why */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* about section start */
+.section-about {
+  padding: 9.6rem 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.services-card-part {
+  padding: 9.6rem 0;
+}
+
+.div-paragraph {
+  margin-top: 2.6rem;
+}
+
+/* ghost section */
+.ghost-section {
+  padding: 9.6rem 0;
+  /* background-color: #fcfbfb; */
+  /* background-color: #f7f7f7; */
+}
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.2rem;
+}
+
+.services-box-content {
+  padding: 4.8rem 2.8rem;
+  display: flex;
+  /* align-items: flex-start; */
+  gap: 1.5rem;
+}
+
+.services-box {
+  border-radius: 11px;
+  /* find out why */
+  overflow: hidden;
+  transition: all 0.4s;
+
+  box-shadow: 0 1.4rem 3.8rem rgba(0, 0, 0, 0.04);
+}
+
+.services-box:hover {
+  transform: translateY(-1.2rem);
+
+  box-shadow: 0 2.2rem 5.4rem rgba(0, 0, 0, 0.02);
+}
+
+.service-icon {
+  height: 5.2rem;
+  width: 20.2rem;
+  color: brown;
+}
+
+.link:link,
+.link:visited {
+  display: block;
+  color: brown;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: inherit;
+  border-bottom: 1px solid currentColor;
+  margin-top: 2rem;
+  /* width: 35%; */
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link-service {
+  width: 9rem;
+}
+
+.link:hover,
+.link:active {
+  color: brown;
+  border-bottom: 1px solid transparent;
+}
+
+/* Properties */
+.grid {
+  display: grid;
+  /* column-gap: 6.4rem; */
+  column-gap: 8rem;
+  row-gap: 9.6rem;
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+/* remove and add this back to seewhat happens */
+/* .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: center;
+  /* justify-items: center; */
+}
+
+.section-properties {
+  padding: 9.6rem 0;
+  background-color: #fcfbfb;
+  /* background-color: #f7f7f7; */
+}
+
+.center-text {
+  text-align: center;
+}
+
+.property-img {
+  width: 36rem;
+  border-radius: 1rem;
+  /* find out why ..oh its to prevent the page from expanding. the hidden is supposed to be in the parent element*/
+  /* overflow: hidden; */
+  /* find out why */
+  display: block;
+  transition: all 0.4s;
+}
+
+.property-img:hover {
+  transform: scale(1.1);
+}
+
+.link-properties {
+  width: 17%;
+}
+
+/* contact */
+
+.section-contact {
+  padding: 12.6rem 0;
+}
+
+.pad {
+  padding: 0 3.2rem;
+}
+
+/* .flex-item-text {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+} */
+
+.heading-tertiary-contact {
+  color: #333;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.min-head {
+  color: #333;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.min-text {
+  color: #333;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
+
+.min-head-text {
+  margin-top: 3.6rem;
+  color: #333;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* footer */
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 9.2rem;
+}
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+  background-color: #fcfbfb;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-text {
+  font-size: 1.6rem;
+  color: #767676;
+  line-height: 1.6;
+}
+
+/* sticky header */
+
+/* STICKY NAVIGATION */
+.sticky .header-part {
+  /* color: #555; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  /* background-color: rgba(255, 255, 255, 0.97); */
+  background-color: rgba(85, 85, 85, 0.253);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .header-container {
+  margin-top: 9.6rem;
+}
